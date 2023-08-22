@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>UK Form</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Contact form</h1>
+            <form action="" method="get" enctype="">
+                <h3>Contact information</h3>
+                <div class="form_line">
+                    <label for="first-name">Name <span class="red_star">*</span> </label>
+                    <input class="input_field" type="text" name="first-name" required>
+                </div>
+                
+                <div class="form_line">
+                    <label for="last-name">Surname <span class="red_star">*</span></label> 
+                    <input class="input_field" type="text" name="last-name" required>
+                </div>
+
+                <div class="form_line">
+                    <label for="email">Email <span class="red_star">*</span> </label>
+                    <input class="input_field" type="text" name="email" required>
+                </div>
+
+                <div class="form_line">
+                    <label for="phone">Contact phone <span class="red_star">*</span> </label>
+                    <input class="input_field" type="text" name="phone" required>
+                </div>
+
+                <h3>Select the ticket subject</h3>
+
+                <div class="form_line">
+                    <select required>
+                        <option disabled selected value> -- select an option -- </option>
+                        <option value="" name="parts">Purchase spare parts / accessories</option>
+                        <option value="" name="aftersales">After sales support </option>
+                        <option value="" name="question">Question about a machine</option>
+                        <option value="" name="delivery">Issue with delivery</option>
+                        <option value="" name="other_question">Other</option>
+                    </select>
+                </div>
+
+                <h3>Additional info depeding on the subject</h3>
+
+                <div class="form_line">
+                    <label for="address">Address</label> 
+                    <input class="input_field" type="text" name="address">
+                </div>
+
+                <div class="form_line">
+                    <label for="zip">ZIP code </label>
+                    <input class="input_field" type="text" name="zip">
+                </div>
+
+                <div class="form_line">
+                    <label for="city">City</label> 
+                    <input class="input_field" type="text" name="city">
+                </div>
+
+                <div class="form_line">
+                    <label for="model">Product model </label>
+                    <input class="input_field" type="text" name="model">
+                </div>
+
+                <div class="form_line">
+                    <label for="order-number">Order number</label> 
+                    <input class="input_field" type="text" name="order-number">
+                </div>
+
+                <div class="form_line">
+                    <label for="serial">Serial number </label>
+                    <input class="input_field" type="text" name="serial">
+                </div>
+
+                <h3>Comments</h3>
+                <textarea name="comments" ></textarea>
+                
+                <h3>Photo of the machine plate</h3>
+                <div class="form_line">Max file size: 1024 KB | Allow file types: jpeg, png</div>
+                <input type="file">
+
+                <h3>Photos of the problem</h3>
+                <div class="form_line">Max file size: 1024 KB | Allow file types: jpeg, png</div>
+                <input type="file" multiple>
+
+                <h3>Submit your request</h3>
+                <div><input type="checkbox" required> I confirm that the information provided in this form is truthful and accurate. <span class="red_star">*</span></div>
+                <div><input type="checkbox" required> I understand the returned machine will be inspected by a technician and that any user error damaged may be charged accordingly. <span class="red_star">*</span></div>
+                <div><input type="checkbox" required> If you do not attach image(s) of your item(s), please note, damages caused during the return to us, could be deducted from any refund if we are unable to confirm the condition of your product(s) prior to return. <span class="red_star">*</span></div>
+                <div><input type="checkbox" required> I have read and understood the <a href="">terms and conditions <span class="red_star">*</span> </a>.</div>
+
+                <input class="buttons" type="reset" value="Clear all" name="reset">
+                <input class="buttons" type="submit" value="Send my request" name="submit">
+                
+
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
